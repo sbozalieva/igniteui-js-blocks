@@ -57,19 +57,21 @@ Output:
 You can access all properties of the button component with the following attributes:
 
 
--`action1ButtonType` Can be flat, raised, fab, disabled.
+   ⋅⋅*`action1ButtonType` Can be flat, raised, fab, disabled.
 
--`action1ButtonColor` Sets the color of the label.
+   ⋅⋅*`action1ButtonColor` Sets the color of the label.
 
--`action1ButtonBackgroundColor` Sets the color of the button.
+   ⋅⋅*`action1ButtonBackgroundColor` Sets the color of the button.
 
--`action1ButtonRipple` Gives you the ripple effect.
+   ⋅⋅*`action1ButtonRipple` Gives you the ripple effect.
 
 
 ## Custom Dialogs
 
+
 You can customize the `igx-dialog` by adding any mark up in the ig-modal tag.
-In that case `message` property is not available.
+In that case `message` property is **not available**.
+
 
 ```HTML
 <igx-dialog #custom 
@@ -95,9 +97,27 @@ You can make the dialog dimissible by setting `backgroundClick="true"`
 
 
 
+
 ### Accessibility
 
 ARIAARIAARIARIAR
 The `igx-dialog` adds role="alert" to the main alert element and role="Button" to each button if another button is added the role is automatically switched to role="dialog". It also adds aria-hasPopup="true" to the trigger element.
+
+
+## API
+
+| Methods       | Returns       | Description      |
+| ------------- |:-------------:| ----------------:|
+| close()       | //////        | Opens igx-dialog |
+| open()        | //////        | Closes igx-dialog |
+
+
+
+| Events      | Returns           | Description  |
+| ------------- |:-------------:| -----:|
+| onClose       | //////        | ////// |
+| onOpen        | //////        | ////// |
+| onLeftSelect  | //////        | ////// |
+| onRightSelect | //////        | ////// |
 
 
